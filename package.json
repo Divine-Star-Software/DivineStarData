@@ -5,6 +5,7 @@
   "repository": "https://github.com/lucasdamianjohnson/DivineStarData",
   "homepage": "https://github.com/lucasdamianjohnson/DivineStarData",
   "main": "./out/index.js",
+  "types": "./out/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
