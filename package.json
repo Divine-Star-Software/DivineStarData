@@ -11,7 +11,7 @@
   "type" : "module",
   "module": "true",
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@types/node": "^16.11.10",
     "tslib": "^2.3.1",
