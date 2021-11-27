@@ -8,6 +8,18 @@
 
 ---
 
+![GitHub top language](https://img.shields.io/github/languages/top/lucasdamianjohnson/DivineStarData?color=purple&style=plastic)
+![GitHub repo size](https://img.shields.io/github/repo-size/lucasdamianjohnson/DivineStarData?color=purple&style=plastic)
+![npm own loads](https://img.shields.io/npm/dt/dsdata?color=purple&style=plastic)
+![GitHub latest release](https://img.shields.io/github/v/release/lucasdamianjohnson/DivineStarData?color=purple&style=plastic)
+![GitHub latest version](https://img.shields.io/npm/v/dsdata?color=purple&style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/lucasdamianjohnson/DivineStarData?color=purple&style=plastic)
+![GitHub commit actiivty](https://img.shields.io/github/commit-activity/y/lucasdamianjohnson/DivineStarData?color=purple&style=plastic)
+![GitHub followers](https://img.shields.io/github/followers/lucasdamianjohnson?color=purple&style=plastic)
+![GitHub stars](https://img.shields.io/github/stars/lucasdamianjohnson/DivineStarData?color=purple&style=plastic)
+![GitHub watchers](https://img.shields.io/github/watchers/lucasdamianjohnson/DivineStarData?color=purple&style=plastic)
+ 
+
 # What is this?
 
 A JSON compressor. It compresses data using the LZMA algorithm. It uses a port of LZMA-JS to TypeScript. Check out the original repo here:
@@ -15,7 +27,21 @@ A JSON compressor. It compresses data using the LZMA algorithm. It uses a port o
 
 # Why?
 
-Divine Star has several projects that need to store compressed JSON data. All of Divine Star’s projects are written in TypeScript. The node module did not have a TypeScript version and was not as flexible as needed. This module makes it easy to move the compression and decompression into any context within an Electron node-integration environment or server side..
+Makes it easy to just get and store compressed json data. This is useful is your app generates a lot of data and you want to keep a small footprint on the disk. 
+
+## Why make it? 
+
+Divine Star has several projects that need to store compressed JSON data. All of Divine Star’s projects are written in TypeScript. The node module for LMZA-JS did not have a TypeScript version and was not as flexible as needed. It is still a great library, but it's getting a little out of date. Please show respect to the original creators and their hard work. 
+
+# Improvements 
+
+Just a list of basic improvements/changes that were made to the library:
+
+- The module exports an ES6 class which can then be instantiated. 
+- All functions that the user does not need to access are made private with the new ‘#’ private instance marker. 
+- This module makes it easier to move the compression and decompression into any context within an Electron node-integration environment or server side.
+- The helper class makes it easy to just read and write json async without dealing with the compression. 
+
 
 # Current Features
 
@@ -79,5 +105,11 @@ const DSD = new DivineStarData(fs);
    console.log(data);
 })();
 ````
+
+# Use Just The Converted LZMA-JS
+
+If you want access to just the converted LZMA-JS library just clone the repo and extract the .ts or .js files for the compressor or
+decompressor. Then you can use them in your project and import their respective classes like any other ES6 class. 
+
 
 
