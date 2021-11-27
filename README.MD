@@ -27,7 +27,7 @@ A JSON compressor. It compresses data using the LZMA algorithm. It uses a port o
 
 # Why?
 
-Makes it easy to just get and store compressed json data. This is useful is your app generates a lot of data and you want to keep a small footprint on the disk. 
+Makes it easy to just get and store compressed json data. This is useful if your app generates a lot of data and you want to keep a small footprint on the disk. 
 
 ## Why make it? 
 
